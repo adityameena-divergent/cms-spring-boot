@@ -62,8 +62,6 @@ public class PatientServiceImpl implements PatientService {
 		patient.setAddress(address);
 		
 		patientDao.update(patient);
-	}
-
-	
+	}	
 	
 }
