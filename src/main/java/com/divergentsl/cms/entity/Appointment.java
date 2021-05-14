@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -34,5 +35,13 @@ public class Appointment {
 	@ManyToOne(targetEntity = Doctor.class, fetch = FetchType.EAGER)
 	@JoinColumn(name = "doctor_id")
 	private Doctor doctor;
+	
+	
+	@Transient
+	private int patientId;
+	
+	@Transient
+	private int doctorId;
+	
 	
 }
