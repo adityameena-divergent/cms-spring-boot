@@ -3,10 +3,12 @@ package com.divergentsl.cms.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.divergentsl.cms.dao.DoctorDao;
 import com.divergentsl.cms.entity.Doctor;
 
+@Service
 public class DoctorServiceImpl implements DoctorService {
 
 	@Autowired
